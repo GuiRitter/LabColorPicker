@@ -4,15 +4,15 @@ It all started when I wanted to pick some colors for my personal syntax highligh
 
 For example, I learned about the difference in lightness in colors that have the same intensity in the [RGB](https://en.wikipedia.org/wiki/RGB_color_model) model. Consider the following image:
 
-![primary colors](https://cdn.rawgit.com/GuiRitter/LabColorPicker/master/src/io/github/guiritter/labcolorpicker/images/test color.svg)
+![primary colors](https://cdn.rawgit.com/GuiRitter/LabColorPicker/master/src/io/github/guiritter/labcolorpicker/images/test_color.svg)
 
 These colors are at max intensity in RGB (except for black, of course). But you can see that yellow looks much brigher/lighter than blue. If you use [GIMP](https://en.wikipedia.org/wiki/GIMP) and desaturate this image, you get a choice between Lightness and Luminosity. If you pick the first one, you get:
 
-![primary colors desaturated by lightness](https://cdn.rawgit.com/GuiRitter/LabColorPicker/master/src/io/github/guiritter/labcolorpicker/images/test lightness.svg)
+![primary colors desaturated by lightness](https://cdn.rawgit.com/GuiRitter/LabColorPicker/master/src/io/github/guiritter/labcolorpicker/images/test_lightness.svg)
 
 You can see that all colors are at max intensity, according to RGB. But if you pick Luminosity instead, you get:
 
-![primary colors desaturated by luminosity](https://cdn.rawgit.com/GuiRitter/LabColorPicker/master/src/io/github/guiritter/labcolorpicker/images/test luminosity.svg)
+![primary colors desaturated by luminosity](https://cdn.rawgit.com/GuiRitter/LabColorPicker/master/src/io/github/guiritter/labcolorpicker/images/test_luminosity.svg)
 
 So you can see that yellow indeed appears brighter/lighter than blue to our eyes. With that in mind, I wanted a color model where you had a component that represented lightness, like [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) (which I already used), but where this lightness was adjusted to how we perceive it, and I found [CIELAB](https://en.wikipedia.org/wiki/Lab_color_space).
 
